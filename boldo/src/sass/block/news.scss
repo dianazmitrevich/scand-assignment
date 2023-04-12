@@ -1,0 +1,137 @@
+.news__wrapper {
+   padding-bottom: 124px;
+   max-width: 998px;
+   margin: 0 auto;
+
+   @include sm-tablet {
+      padding-bottom: 100px;
+   }
+
+   @include mobile {
+      padding-bottom: 80px;
+   }
+}
+
+.news__title {
+   margin-bottom: 40px;
+}
+
+.news__cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-bottom: 16px;
+}
+
+.news__card {
+   width: calc((100% - 100px) / 3);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-bottom: 80px;
+
+   .card__image {
+      height: 209px;
+      border-radius: 24px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+
+      picture {
+         height: 100%;
+
+         @include mobile {
+            width: 100%;
+            height: auto;
+         }
+      }
+
+      img {
+         height: 100%;
+
+         @include mobile {
+            width: 100%;
+            height: auto;
+         }
+      }
+
+      @include l-tablet {
+         height: 150px;
+      }
+
+      @include mobile {
+         width: 100%;
+         height: auto;
+      }
+   }
+
+   .card__row {
+      display: flex;
+      align-items: center;
+   }
+
+   .card__row:nth-of-type(1) {
+      margin-bottom: 12px;
+
+      @include l-tablet {
+         flex-direction: column;
+         align-items: flex-start;
+      }
+   }
+
+   .card__category {
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      color: #0A2640;
+      margin-right: 12px;
+   }
+
+   .card__date {
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      color: #777777;
+   }
+
+   .card__body {
+      font-size: 2.0rem;
+      line-height: 3.2rem;
+      margin-bottom: 20px;
+   }
+
+   .card__author {
+      display: flex;
+      align-items: center;
+
+      span {
+         font-size: 1.6rem;
+         line-height: 2.8rem;
+         margin-left: 12px;
+      }
+   }
+
+   @include l-tablet {
+      width: calc((100% - 60px) / 3);
+      margin-bottom: 60px;
+   }
+
+   @include sm-tablet {
+      width: calc((100% - 50px) / 2);
+   }
+
+   @include mobile {
+      width: 100%;
+   }
+}
+
+.news__card:last-of-type {
+   @include mobile {
+      margin-bottom: 30px;
+   }
+}
+
+.news__cta {
+   margin: 0 auto;
+}

@@ -1,0 +1,50 @@
+[
+   {
+      "imageSrc": "news-1.png",
+      "category": "Category",
+      "date": "November 22, 2021",
+      "body": "Pitch termsheet backing validation focus release.",
+      "authorName": "Chandler Bing",
+      "authorImage": "chandler.png"
+   },
+   {
+      "imageSrc": "news-2.png",
+      "category": "Category",
+      "date": "November 22, 2021",
+      "body": "Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
+      "authorName": "Rachel Green",
+      "authorImage": "rachel.png"
+   },
+   {
+      "imageSrc": "news-3.png",
+      "category": "Category",
+      "date": "November 22, 2021",
+      "body": "Beta prototype sales iPad gen-z marketing network effects value proposition",
+      "authorName": "Monica Geller",
+      "authorImage": "monica.png"
+   },
+   {
+      "imageSrc": "news-4.png",
+      "category": "Category",
+      "date": "November 22, 2021",
+      "body": "Pitch termsheet backing validation focus release.",
+      "authorName": "Chandler Bing",
+      "authorImage": "chandler.png"
+   },
+   {
+      "imageSrc": "news-5.png",
+      "category": "Category",
+      "date": "November 22, 2021",
+      "body": "Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
+      "authorName": "Rachel Green",
+      "authorImage": "rachel.png"
+   },
+   {
+      "imageSrc": "news-6.png",
+      "category": "Category",
+      "date": "November 22, 2021",
+      "body": "Beta prototype sales iPad gen-z marketing network effects value proposition",
+      "authorName": "Monica Geller",
+      "authorImage": "monica.png"
+   }
+]

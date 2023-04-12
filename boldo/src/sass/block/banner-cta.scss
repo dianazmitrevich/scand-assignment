@@ -1,0 +1,97 @@
+.banner-cta {
+   margin-bottom: 84px;
+   background: #0A2640;
+   border-radius: 12px;
+   overflow: hidden;
+
+   @include sm-tablet {
+      margin-bottom: 60px;
+   }
+
+   @include mobile {
+      margin-bottom: 40px;
+   }
+}
+
+.banner-cta__wrapper {
+   position: relative;
+   padding: 72px;
+   margin: 0 auto;
+   text-align: center;
+
+   &:before {
+      position: absolute;
+      content: '';
+      top: -250%;
+      right: -48%;
+      width: 1293px;
+      height: 1293px;
+      background: #1C3D5B;
+      border-radius: 50%;
+
+      @include desktop {
+         right: -68%;
+      }
+
+      @include l-tablet {
+         right: -86%;
+         top: -300%;
+      }
+   }
+
+   @include l-tablet {
+      padding: 50px;
+   }
+}
+
+.banner-cta__title {
+   position: relative;
+   z-index: 99;
+   max-width: 830px;
+   color: #fff;
+   margin-bottom: 48px;
+   margin-left: auto;
+   margin-right: auto;
+
+   @include l-tablet {
+      font-size: 3rem;
+      line-height: 3.8rem;
+   }
+}
+
+.banner-cta__form {
+   position: relative;
+   z-index: 99;
+
+   input[type="email"] {
+      font-size: 2rem;
+      line-height: 3.2rem;
+      outline: none;
+      padding: 12px 32px;
+      background: #FFFFFF;
+      border: 2px solid #FFFFFF;
+      border-radius: 240px;
+      width: 370px;
+      margin-right: 24px;
+
+      @include l-tablet {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         margin-bottom: 15px;
+      }
+
+      @include mobile {
+         width: 100%;
+      }
+   }
+
+   input[type="email"]::placeholder {
+      color: #000;
+   }
+
+   button[type="submit"] {
+      color: #0A2640;
+      background: #65E4A3;
+   }
+}

@@ -1,0 +1,52 @@
+extends layout/app
+
+block page
+   div(class="g-wrap")
+      div(class="outer-bg")
+         include chunk/header
+         div(class="g-main", style="padding-top: 128px;")
+            div(class="container")
+               div(class="heading")
+                  div(class="heading__wrapper")
+                     div(class="heading__subtitle") Blog
+                     div(class="heading__title h2") Thoughts and words
+               div(class="featured-article")
+                  div(class="featured-article__wrapper")
+                     div(class="featured-article__row")
+                        div(class="featured-article__col")
+                           img(src="img/banner.png", alt="Featued post")
+                        div(class="featured-article__col col")
+                           div(class="col__tag")
+                              div(class="tag") Category
+                              div(class="date") November 22, 2021
+                           div(class="col__text h3") Pitch termsheet backing validation focus release.
+                           div(class="col__author")
+                              div(class="image")
+                                 img(src="img/chandler.png", alt="Author")
+                              span Chandler Bing
+               div(class="news")
+                  div(class="news__wrapper")
+                     div(class="news__title h3") Latest news
+                     div(class="news__cards")
+                        each item in news
+                           div(class="news__card card")
+                              div(class="card__top")
+                                 div(class="card__image")
+                                    img(src="img/" + item.imageSrc, alt="News")
+                                 div(class="card__text")
+                                    div(class="card__row")
+                                       div(class="card__category")= item.category
+                                       div(class="card__date")= item.date
+                                    div(class="card__row")
+                                       div(class="card__body")= item.body
+                              div(class="card__author")
+                                 img(src="img/" + item.authorImage, alt="Author")
+                                 span= item.authorName
+                     div(class="news__cta l-btn") Load more
+               div(class="banner-cta")
+                  div(class="banner-cta__wrapper")
+                     div(class="banner-cta__title h3") An enterprise template to ramp up your company website
+                     div(class="banner-cta__form form")
+                        input(type="email", placeholder="Your email address", required)
+                        button(type="submit", class="l-btn") Start now
+            include chunk/footer

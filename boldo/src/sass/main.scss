@@ -1,0 +1,165 @@
+$base-font-size: 10px;
+$base-line-height: 1.15;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url(`https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap`);
+
+@mixin mobile {
+   @media (max-width: 575px) {
+      @content;
+   }
+}
+
+@mixin sm-tablet {
+   @media (max-width: 767px) {
+      @content;
+   }
+}
+
+@mixin l-tablet {
+   @media (max-width: 991px) {
+      @content;
+   }
+}
+
+@mixin desktop {
+   @media (max-width: 1219px) {
+      @content;
+   }
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: $base-font-size;
+   line-height: $base-line-height;
+}
+
+body {
+   font-size: 1.6rem;
+   font-family: 'Open Sans', sans-serif;
+   line-height: 1.5;
+   overflow-x: hidden;
+}
+
+.container {
+   width: 100%;
+   padding: 0 20px;
+   margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+   .container {
+      max-width: 540px;
+   }
+}
+
+@media (min-width: 768px) {
+   .container {
+      max-width: 720px;
+   }
+}
+
+@media (min-width: 992px) {
+   .container {
+      max-width: 960px;
+   }
+}
+
+@media (min-width: 1220px) {
+   .container {
+      max-width: 1240px;
+   }
+}
+
+a {
+   text-decoration: none;
+   color: unset;
+}
+
+.g-wrap {
+   min-width: 400px;
+   margin: 0 auto;
+}
+
+.outer-bg {
+   display: flex;
+   flex-direction: column;
+   max-width: 1920px;
+   margin: 0 auto;
+}
+
+.sm-btn {
+   font-weight: 700;
+   font-size: 1.6rem;
+   line-height: 2.4rem;
+   color: #0A2640;
+   padding: 8px 40px;
+   border: 2px solid #0A2640;
+   border-radius: 24px;
+   width: fit-content;
+}
+
+.l-btn {
+   font-weight: 700;
+   font-size: 2rem;
+   line-height: 2.8rem;
+   color: #0A2640;
+   padding: 16px 56px;
+   border: 2px solid #0A2640;
+   border-radius: 56px;
+   width: fit-content;
+}
+
+.h2 {
+   font-family: 'Manrope', sans-serif;
+   font-weight: 400;
+   font-size: 6.4rem;
+   line-height: 8.4rem;
+   text-align: center;
+   color: #0A2640;
+
+   @include sm-tablet {
+      font-size: 5rem;
+      line-height: 6rem;
+   }
+
+   @include mobile {
+      font-size: 4.5rem;
+      line-height: 5.5rem;
+   }
+}
+
+.h3 {
+   font-family: 'Manrope', sans-serif;
+   font-weight: 400;
+   font-size: 4.8rem;
+   line-height: 7.2rem;
+   color: #000000;
+
+   @include l-tablet {
+      font-size: 3.8rem;
+      line-height: 5.8rem;
+   }
+
+   @include mobile {
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+   }
+}
+
+.show {
+   opacity: 1 !important;
+   visibility: visible !important;
+   display: block !important;
+}
+
+.overflow-hidden {
+   overflow: hidden
+}
+
+@import "block/*.scss";

@@ -1,0 +1,29 @@
+.heading {
+   margin-bottom: 40px;
+
+   @include mobile {
+      margin-bottom: 15px;
+   }
+}
+
+.heading__wrapper {
+   padding: 27.5px 0;
+}
+
+.heading__title {
+   @include l-tablet {
+      text-align: left;
+   }
+}
+
+.heading__subtitle {
+   font-size: 2.0rem;
+   line-height: 3.2rem;
+   text-align: center;
+   color: #0A2640;
+   margin-bottom: 12px;
+
+   @include l-tablet {
+      text-align: left;
+   }
+}
